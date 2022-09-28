@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>SkillsUSA | Lecture 1</title>
+    </head>
+    <body>
+        <p id="firstParagraph">This <b>creates</b> a paragraph!</p>
+        <p>This <strong>creates</strong> a paragraph!</p>
+        <p>This <i>creates</i> a paragraph!</p>
+        <p>This <em>creates</em> a paragraph!</p>
+        <h1>This is a first-level header</h1>
+        <h2><a href="#testCode">This</a> is a second-level header</h2>
+        <h3>This is a third-level header</h3>
+        <h4>This is a fourth-level header</h4>
+        <h5>This is a fifth-level header</h5>
+        <h6>This is a sixth-level header</h6>
+        <ul>
+            <li>This is an item</li>
+            <li>And so is this one</li>
+            <li>...me too!</li>
+            <ul>
+                <li>I'm a nested item!</li>
+                <li>Hi there</li>
+                <ul>
+                    <li>I'm doubly nested!</li>
+                    <ul>
+                        <li>What symbol should I be?</li>
+                    </ul>
+                </ul>
+                <li>I'm after the nested list</li>
+            </ul>
+        </ul>
+        <ol>
+            <li>This is the first item</li>
+            <li>This is the second item</li>
+            <ul>
+                <li>Hi there</li>
+            </ul>
+            <li>This is the third item</li>
+            <ol type="A" start="-5">
+                <li>I'm another ordered item!</li>
+                <li>I'm another item!</li>
+                <li>I'm another ordered item!</li>
+                <li>I'm another item!</li>
+                <li>I'm another ordered item!</li>
+                <li>I'm another item!</li>
+                <li>I'm another ordered item!</li>
+                <li>I'm another item!</li>
+            </ol>
+        </ol>
+        <dl>
+            <dt>Separation of Concerns</dt>
+            <dd>
+                The practice of separating 
+                content, style, and behavior 
+                in web technologies
+            </dd>
+            <dt>This is another term</dt>
+            <dd>This is another definition</dd>
+        </dl>
+        <article>
+            <h1>SkillsUSA Starts at Southern Adventist University</h1>
+            <hr />
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Harum consequuntur alias ipsam, consectetur voluptatum facere 
+                voluptas quos in voluptates molestias ex dicta eum id possimus 
+                quaerat expedita! Nisi, cumque eos.
+            </p>
+            <blockquote>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Blanditiis eos perspiciatis incidunt aliquam labore 
+                necessitatibus cupiditate quos voluptate soluta iste, 
+                maiores qui culpa reiciendis suscipit voluptatem itaque, 
+                porro tenetur veniam.
+            </blockquote>
+            <p>
+                <a title="Take me to Google!" href="http://www.google.com/" target="_blank">Lorem</a> a ipsum dolor sit amet consectetur adipisicing elit. 
+                Harum consequuntur alias ipsam, consectetur voluptatum facere 
+                voluptas quos in voluptates molestias ex dicta eum id possimus 
+                quaerat expedita! Nisi, cumque eos.
+            </p>
+        </article>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th><a href="#firstParagraph">Monday</a></th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Advanced Web Programming</td>
+                    <td>Life & Teachings of Jesus</td>
+                    <td>Art History</td>
+                </tr>
+                <tr>
+                    <td>Issues in Computer Science & Religion</td>
+                    <td>US History</td>
+                    <td>Fundamentals of Programming</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Class Schedule 2022</td>
+                </tr>
+            </tfoot>
+        </table>
+        <pre>
+            fjeoajfopad                      
+            <span style="color: red">fejoafjda</span>       fjeoafje
+            fdjoafe[af] fojepaf      ad
+        </pre>
+        <code id="testCode">
+            console.log("Hi there!")
+        </code>
+        <br />
+        <img
+            width="200"
+            src="http://clipart-library.com/images/pT5ra4Xgc.jpg" 
+            alt="Blue electric dragon"
+            title="Blue electric dragon TOOLTIP hehe"
+        />
+        <video controls loop autoplay muted>
+            <source src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" type="video/mp4"/>
+        </video>
+        <audio controls autoplay muted>
+            <source src="https://www.freesoundslibrary.com/wp-content/uploads/2022/09/free-ocean-waves-sound.mp3" type="audio/mpeg" />
+        </audio>
+        <form>
+            <fieldset>
+                <legend>Contact Us</legend>
+                <input type="text" />
+                <input type="email" />
+                <input type="date" />
+                <input type="range" min="1" max="3" step="1" />
+                <input type="number" min="10" max="100"/>
+                <input type="tel" />
+                <input type="color" />
+                <label>
+                    Male <input type="radio" name="gender"/>
+                </label>
+                <label>
+                    Female <input type="radio" name="gender" />
+                </label>
+                <input type="checkbox" /> Chocolate
+                <input type="checkbox" /> Vanilla
+                <button type="submit">Submit!</button>
+                <select>
+                    <optgroup label="Ford">
+                        <option>Taurus</option>
+                        <option>Mustang</option>
+                        <option>Expedition</option>
+                    </optgroup>
+                    <optgroup label="Toyota">
+                        <option selected>Prius</option>
+                        <option>Camry</option>
+                        <option>Sienna</option>
+                    </optgroup>
+                </select>
+                <button type="reset">Reset the form!</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
