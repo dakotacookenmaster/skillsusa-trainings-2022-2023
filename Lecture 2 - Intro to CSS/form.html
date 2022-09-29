@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: orange;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            /* border-right: 2px solid red;
+            border-left: 2px dashed green; */
+            /* margin: 10px; All sides */
+            /* margin: 10px 20px; TB LR */
+            /* margin: 10px 15px 20px; T B LR */
+            /* margin: 10px 15px 20px 25px; T R B L */
+        }
+
+        main {
+            /* width: 500px;
+            height: 2000px;
+            background: teal;
+            position: relative;
+            border-radius: 100%; */
+        }
+
+        main > div:first-child {
+           position: absolute;
+           left: 70px;
+           top: 100px;
+           background: tan;
+           z-index: 2;
+           opacity: 0.75;
+        }
+
+        section {
+            width: 200px;
+            height: 200px;
+            /* margin-top: 500px; */
+            /* top: 200px; */
+            background: blue;
+            /* position: sticky; */
+            transform: scale(10);
+        }
+
+        /* * {
+            transform: rotate(50deg);
+        } */
+        main > div {
+            border: 2px dotted maroon;
+        }
+
+        /* main section:first-of-type + section {
+            background: purple;
+        } */
+
+        div {
+            transition: ease-in 1s;
+        }
+
+        /* L V H A */
+        a:link, a:visited, a:hover, a:active {
+
+        }
+
+        div:hover {
+            /* transform: rotate(30deg); */
+            border: 5px solid pink;
+            width: 500px;
+            height: 500px;
+            margin-left: 200px;
+        }
+
+        /* a:visited {
+            color: black;
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+        a:active {
+            border: 2px solid black;
+        } */
+
+        a {
+            color: tan;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <!-- <a href="http://www.google.com/">Google!</a>
+        <div>
+            Hi! I'm a box.
+        </div>
+        <div>
+            Hi! I'm #2 box.
+        </div>
+        <section>
+            <div style="margin-top: 100px;">
+                Hi there I'm not inside the main directly.
+            </div>
+        </section>
+        <section>
+
+        </section> -->
+        <section>
+
+        </section>
+    </main>
+</body>
+
+</html>

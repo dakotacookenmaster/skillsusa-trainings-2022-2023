@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        @keyframes slide-right {
+            25% {
+                margin-left: 200px;
+                width: 400px;
+            }
+            50% {
+                background: orange;
+            }
+            75% {
+                border: 10px solid green;
+            }
+            100% {
+                margin-left: 0px;
+                width: 200px;
+                background: blue;
+                border: none;
+            }
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background: #2A2A2A;
+        }
+
+        nav {
+            width: 100%;
+            background: maroon;
+            position: fixed;
+            z-index: 999;
+        }
+
+        div {
+            width: 100px;
+            height: 1000px;
+            background: blue;
+            position: relative;
+            top: 45px;
+            animation: slide-right linear 10s forwards;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            gap: 10px;
+            font-size: 18px;
+            color: white;
+        }
+
+        nav ul li,
+        nav ul li a {
+            display: block;
+            height: 100%;
+        }
+
+        a {
+            color: white;
+            transition: linear 0.2s;
+            padding: 10px;
+            text-decoration: none;
+            border-top: 5px solid maroon;
+        }
+
+        a:hover {
+            border-top: 5px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>Hi there</div>
+    </main>
+</body>
+
+</html>
