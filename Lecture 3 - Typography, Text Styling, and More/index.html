@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet"> 
+    <title>Fonts, Typography, and More</title>
+    <style>
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: normal;
+            background: transparent;
+            font-family: Silkscreen, sans-serif;
+        }
+
+        span {
+            transition: ease-in-out 1s;
+            text-decoration: underline line-through;
+            font-style: italic;
+            font-weight: bold;
+            /* text-shadow: 4px 4px 5px #2A2A2A; */
+        }
+
+        h1:first-letter {
+            font-size: 300%;
+        }
+
+        span:hover {
+            -webkit-text-stroke: 1px red;
+            text-stroke: 1px red;
+            text-shadow: 4px 4px 5px #2A2A2A;
+            font-size: 200%;
+        }
+
+        article p:nth-of-type(2n + 1):first-letter {
+            font-weight: bold;
+            color: green;
+        }
+
+        article p {
+            padding-left: 20px;
+            text-indent: -20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <h1>Lorem <span>ipsum</span> dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt eligendi praesentium amet dolores neque consequatur ipsa. Veritatis cum amet eaque. Ex dolores adipisci quis minima. Quidem quibusdam incidunt animi omnis?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem harum commodi corporis voluptates ut iusto accusantium. Tenetur quasi, eveniet necessitatibus voluptatibus eum numquam omnis eligendi deleniti voluptatem beatae quisquam quidem.</p>
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum recusandae repellendus itaque unde fuga quod, voluptatibus eaque aspernatur similique hic necessitatibus ipsum vel quos. Assumenda consequatur ducimus voluptates nobis deserunt?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae earum ipsum sapiente quis possimus odio totam sequi maiores ratione impedit necessitatibus corporis praesentium debitis, optio sed eligendi reiciendis quia sunt.</p>
+        </article>
+    </main>
+</body>
+</html>

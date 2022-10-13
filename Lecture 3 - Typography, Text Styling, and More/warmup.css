@@ -1,0 +1,86 @@
+/* CSS RESET */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* HEADER STYLING */
+header {
+    width: 100%;
+}
+
+/* Navigation Bar */
+nav {
+    box-sizing: border-box;
+    width: 100%;
+    background: maroon;
+    color: white;
+    padding: 10px;
+}
+
+nav ul, nav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+nav ul li:first-child {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: white;
+    color: black;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+nav ul li:nth-child(2) {
+    margin-left: auto;
+}
+
+/* MAIN CONTENT */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+section div {
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+main div:first-child {
+    background: teal;
+    z-index: 0;
+}
+
+main div:nth-child(2) {
+    background: green;
+    z-index: 1;
+    margin-left: 180px;
+    top: -50px;
+}
+
+main div:nth-child(3) {
+    z-index: 2;
+    background: red;
+    top: -100px;
+}
+
+main div:nth-child(4) {
+    z-index: 3;
+    background: green;
+    top: -150px;
+    margin-left: 180px;
+}
