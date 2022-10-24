@@ -1,0 +1,27 @@
+/* CSS RESET */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* MAIN CONTENT */
+main {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    gap: 5px;
+}
+
+textarea {
+    height: 600px;
+}
+
+main div {
+    display: flex;
+    gap: 5px;
+}
+
+main div input {
+    width: 100%;
+}

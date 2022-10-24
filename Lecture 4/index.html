@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using JavaScript</title>
+    <style>
+        /* CSS RESET */
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*************/
+        header, main, footer {
+            width: 100%;
+            display: flex;
+        }
+
+        aside {
+            flex: 1;
+        }
+
+        section { 
+            flex: 2;
+        }
+
+        header {
+            background: maroon;
+            height: 300px;
+        }
+
+        main {
+            height: 500px;
+        }
+
+        aside {
+            background: teal;
+            padding: 20px;
+            transition: ease-in 0.4s;
+        }
+
+        section {
+            background: black;
+        }
+
+        footer {
+            height: 200px;
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <aside>
+            <button onclick="toggle()">Collapse</button>
+        </aside>
+        <section></section>
+    </main>
+    <footer></footer>
+    <script>
+        function toggle() {
+            const aside = document.querySelector("aside")
+            const button = document.querySelector("button")
+            const styles = window.getComputedStyle(aside, null)
+            const flexAmount = styles.getPropertyValue("flex-grow")
+
+            if(flexAmount === "1") {
+                aside.style.flex = "0"
+                button.innerText = "Expand"
+            } else {
+                aside.style.flex = "1"
+                button.innerText = "Collapse"
+            }
+        }
+
+        const toggle2 = () => {
+            console.log("You clicked toggle2!")
+        }
+
+        const toggle3 = function() {
+            console.log("You clicked toggle3!")
+        }
+    </script>
+</body>
+</html>
