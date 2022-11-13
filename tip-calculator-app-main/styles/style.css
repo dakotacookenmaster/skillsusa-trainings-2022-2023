@@ -1,0 +1,126 @@
+/* COLOR PALETTE */
+:root {
+    --strong-cyan: hsl(172, 67%, 45%);
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+    --site-font-weight: 700;
+    --site-font: "Space Mono", monospace;
+}
+
+
+/* GLOBAL RESET */
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: var(--light-grayish-cyan);
+    font-family: var(--site-font);
+    font-weight: var(--site-font-weight);
+}
+
+main {
+    width: 100%;
+    max-width: 1440px;
+    min-width: 375px;
+    margin: 0 auto;
+}
+
+/* TITLE STYLES */
+.title {
+    color: var(--very-dark-cyan);
+    text-align: center;
+    padding: 100px 100px 50px 100px;
+}
+
+.title p {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/* CARD STYLES */
+.card {
+    width: 75%;
+    background: var(--white);
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    gap: 30px;
+}
+
+.card > div {
+    flex: 1;
+    width: 100%;
+}
+
+.card > div:nth-child(2) {
+    background: var(--very-dark-cyan);
+    border-radius: 10px;
+}
+
+.textInput {
+    direction: rtl;
+    color: var(--very-dark-cyan);
+    background: var(--very-light-grayish-cyan);
+    font-family: var(--site-font);
+    font-weight: var(--site-font-weight);
+    border: none;
+    padding: 5px;
+    outline: none;
+}
+
+::placeholder {
+    opacity: 1;
+    color: var(--grayish-cyan);
+}
+
+label, .card div > p {
+    color: var(--grayish-cyan);
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.group {
+    display: flex;
+    gap: 10px;
+}
+
+.group > * {
+    flex: 1;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.group > div {
+    background: var(--very-dark-cyan);
+    text-align: center;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.group input {
+    border: none;
+    padding: none;
+    outline: none;
+    color: var(--very-dark-cyan);
+    background: var(--very-light-grayish-cyan);
+    text-align: center;
+    font-family: var(--site-font);
+    font-weight: var(--site-font-weight);
+}
+
+input:not([placeholder="Custom"]) {
+    width: 100%;
+}
