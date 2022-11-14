@@ -121,6 +121,67 @@ label, .card div > p {
     font-weight: var(--site-font-weight);
 }
 
+input:focus {
+    outline: 2px solid var(--strong-cyan);
+    border-radius: 3px;
+}
+
 input:not([placeholder="Custom"]) {
     width: 100%;
+}
+
+.totalCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.totalCard p {
+    margin: 0;
+    padding: 0;
+}
+
+#right {
+    padding: 45px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.totalCard div:first-child p:first-child {
+    color: var(--white);
+}
+
+.totalCard div:first-child p:last-child {
+    font-size: 13px;
+}
+
+.totalCard > div:last-child p {
+    color: var(--strong-cyan);
+    font-size: 50px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+button {
+    background: var(--strong-cyan);
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    color: var(--very-dark-cyan);
+    font-family: var(--site-font);
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+button:disabled {
+    background: var(--strong-cyan);
+    opacity: 0.25;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background: var(--light-grayish-cyan);
 }
